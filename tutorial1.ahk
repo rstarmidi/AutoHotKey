@@ -1,5 +1,6 @@
 ;----------Main Script----------
 ;--------------------------------------------------------------
+;Note: Run this script while having a notepad open and maximized
 
 Pause Off
 
