@@ -12,7 +12,7 @@
 	}
 	return
 	
-^e::	;work to open, but once onenote is opened, the script gone from the taskbar
+^e::			;work for opening onenote, but once it is opened, the script exited by itself
 	IfWinNotExist, ahk_class Framework::CFrame ahk_exe ONENOTE.EXE
 	{
 		Run, C:\Program Files (x86)\Microsoft Office\root\Office16\ONENOTE.EXE
@@ -22,4 +22,7 @@
 		WinClose, ahk_class Framework::CFrame ahk_exe ONENOTE.EXE
 	}
 
+^e::			;Pressing Ctrl+e will give same effect of pressing Win+1
+	Send, #1
+	return
 ^x::ExitApp
